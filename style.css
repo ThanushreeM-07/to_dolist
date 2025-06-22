@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  background-color: #F9A7B0;
+  color:#A23BEC;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.input-section button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.input-section button:hover {
+  background-color: #0056b3;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  min-width: 45%;
+}
+
+.filters button:hover {
+  background-color: #bbb;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  word-break: break-word;
+  flex-wrap: wrap;
+}
+
+li span {
+  flex: 1;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+li .meta {
+  font-size: 12px;
+  color: gray;
+  margin-top: 4px;
+}
+
+li .btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+li button {
+  padding: 5px 8px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+li button.done-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+li button.done-btn:hover {
+  background-color: #218838;
+}
+
+li button.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+li button.delete-btn:hover {
+  background-color: #c82333;
+}
+
+li button.pin-btn {
+  background-color: #ffc107;
+  color: black;
+}
+
+li button.pin-btn:hover {
+  background-color: #e0a800;
+}
+
+@media (min-width: 500px) {
+  .input-section {
+    flex-direction: row;
+  }
+
+  .filters button {
+    font-size: 16px;
+  }
+
+  li button {
+    font-size: 14px;
+  }
+}
